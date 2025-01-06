@@ -1,24 +1,41 @@
 const files = [
-    { name: "Homepage", url: "index.html" }
+    { name: "Home Page", url: "index.html" },
+    { name: "About Us", url: "about.html" },
+    { name: "Contact", url: "contact.html" },
+    { name: "Services", url: "services.html" },
+    { name: "Portfolio", url: "portfolio.html" }
   ];
 
-  function performSearch() {
+  function suggestFiles() {
     const input = document.getElementById("searchBar").value.toLowerCase();
-    const resultsContainer = document.getElementById("searchResults");
+    const suggestionBox = document.getElementById("suggestionBox");
+
+    // Filter files based on the input
     const filteredFiles = files.filter(file =>
       file.name.toLowerCase().includes(input)
     );
 
-    resultsContainer.innerHTML = "";
-    if (input) {
+    suggestionBox.innerHTML = "";
+    if (input && filteredFiles.length > 0) {
       filteredFiles.forEach(file => {
-        const link = document.createElement("a");
-        link.href = file.url;
-        link.textContent = file.name;
-        resultsContainer.appendChild(link);
+        const div = document.createElement("div");
+        div.textContent = file.name;
+        div.onclick = () => {
+          document.getElementById("searchBar").value = file.name;
+          suggestionBox.style.display = "none";
+          window.location.href = file.url; // Navigate to the file
+        };
+        suggestionBox.appendChild(div);
       });
-      resultsContainer.style.display = "block";
+      suggestionBox.style.display = "block";
     } else {
-      resultsContainer.style.display = "none";
+      suggestionBox.style.display = "none";
     }
   }
+
+  // Hide the suggestion box when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!document.querySelector(".search-container").contains(e.target)) {
+      document.getElementById("suggestionBox").style.display = "none";
+    }
+  });
