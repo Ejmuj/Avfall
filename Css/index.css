@@ -9,3 +9,7 @@
     text-align: left;
   }
 
+  .item3 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
