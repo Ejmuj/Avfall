@@ -6,8 +6,8 @@ body {
 .grid-container {
     background-color: #d4f6fd;
     display: grid;
-    padding: 5px;
-    grid-template-columns: 1fr 1fr 1fr; /* gjør at alle gridene er like lange */
+    padding: 0px;
+    grid-template-columns: 1fr 1fr 1fr; 
   }
 
   .grid-item {
