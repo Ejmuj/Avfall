@@ -3,12 +3,33 @@
         <title></title>
         <link rel="stylesheet" href="../Css/Style.css">
         <link rel="stylesheet" href="../Css/Om-oss.css">
+        <link rel="stylesheet" href="../Css/Meny.css">
     </head>
 
     <body>
         <div class="grid-container">
-            <div class="grid-item item1"><a2>Om oss</a2></div>
+            <div class="grid-item item1">
+                <div style="float: left;"><button class="menu-button" onclick="toggleMenu()">|||</button></div>
+                <a2>Om oss</a2></div>
 
         </div>
+        <div class="menu-container">
+            
+            <ul class="menu-items" id="menu">
+                <li><a href="../index.html">Hjem</a></li>
+                <li><a href="../Html/Bærequiz.html">Bærekraftig quiz</a></li>
+                <li><a href="../Html/Om oss.html">om oss</a></li>
+            </ul>
+        </div>
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById('menu');
+                if (menu.style.display === 'block') {
+                    menu.style.display = 'none';
+                } else {
+                    menu.style.display = 'block';
+                }
+            }
+        </script>
     </body>
 </html>
