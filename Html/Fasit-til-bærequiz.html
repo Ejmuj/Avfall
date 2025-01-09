@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="../Css/Style.css">
+        <link rel="stylesheet" href="../Css/Meny.css">
+        <link rel="stylesheet" href="../Css/Fasit-til-bærequiz.css">
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <div class="grid-item item1">
+                <div style="float: left;"><button class="menu-button" onclick="toggleMenu()">|||</button></div>
+                <a2>Fasit til Bærekrafts quiz</a2>
+            </div>
+            <div class="menu-container">
+            
+                <ul class="menu-items" id="menu">
+                    <li><a href="../index.html">Hjem</a></li>
+                    <li><a href="../Html/Bærequiz.html">Bærekraft quiz</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdHEvFs-ekt8UkNmRY4i_I5x61BLVshuGw86m1_sjJtutw3Lg/viewform?usp=header">Spørreundersøkelse</a></li>
+                    <li><a href="../Html/Fasit-til-bærequiz.html">Fasit til Bærekrafts quiz</a></li>
+                </ul>
+            </div>
+            <script>
+                function toggleMenu() {
+                    const menu = document.getElementById('menu');
+                    if (menu.style.display === 'block') {
+                        menu.style.display = 'none';
+                    } else {
+                        menu.style.display = 'block';
+                    }
+                }
+            </script>
+            <div class="grid-item item2"></div>
+        </div>
+    </body>
+</html>
