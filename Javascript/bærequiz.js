@@ -19,7 +19,7 @@ function chooseAnswer1(){
         poeng1 = 0
     }
     updateResult();
-    document.getElementById("poen").innerText = "Poeng:" + poeng1
+    document.getElementById("poen").innerText = "Poeng: "  + poeng1
 }
 
 function chooseAnswer2(){
@@ -32,7 +32,7 @@ function chooseAnswer2(){
         poeng2 = 0
     }
     updateResult();
-    document.getElementById("poen2").innerText = "Poeng:" + poeng2
+    document.getElementById("poen2").innerText = "Poeng: " + poeng2
 }
 
 function chooseAnswer3(){
@@ -45,7 +45,7 @@ function chooseAnswer3(){
         poeng3 = 0
     }
     updateResult();
-    document.getElementById("poen3").innerText = "Poeng:" + poeng3
+    document.getElementById("poen3").innerText = "Poeng: " + poeng3
 }
 
 function chooseAnswer4(){
@@ -58,7 +58,7 @@ function chooseAnswer4(){
         poeng4 = 0
     }
     updateResult();
-    document.getElementById("poen4").innerText = "Poeng:" + poeng4
+    document.getElementById("poen4").innerText = "Poeng: " + poeng4
 }
 
 
