@@ -10,19 +10,19 @@ function updateResult() {
     document.getElementById("resultat").innerText = 'Du fikk ' + totalScore + ' av ' + totalPoeng + ' Poeng';
 }
 
-
+let result;
 
 function chooseAnswer(nr){
     let operator = document.getElementById("yAnswer" + (nr+1)).value;
 
     if(operator === Anwers[nr]){
         poeng++;
+        document.getElementById("poen"+(nr+1)).innerText = "Poeng: 1" 
     }
     else {
-        poeng;
+        result = "Poeng: 0"
     }
     updateResult();
-    document.getElementById("poen"+(nr+1)).innerText = "Poeng: 1" 
 }
 
 
