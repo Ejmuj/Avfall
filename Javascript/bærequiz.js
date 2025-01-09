@@ -1,68 +1,53 @@
-let poeng1 = 0
-let poeng2 = 0
-let poeng3 = 0
-let poeng4 = 0
+let poeng = 0
+
 
 let totalPoeng = 4
 
+let Anwers = ["a", "d", "c", "b"]
+
 function updateResult() {
-    const totalScore = poeng1 + poeng2 + poeng3 + poeng4;
+    const totalScore = poeng;
     document.getElementById("resultat").innerText = 'Du fikk ' + totalScore + ' av ' + totalPoeng + ' Poeng';
 }
 
-function chooseAnswer1(){
-    const operator = document.getElementById("yAnswer").value;
-    if(operator === "a"){
-        poeng1 = 1;
+
+
+function chooseAnswer(nr){
+    let operator = document.getElementById("yAnswer" + (nr+1)).value;
+
+    if(operator === Anwers[nr]){
+        poeng++;
     }
     else {
-        poeng1 = 0
+        poeng;
     }
     updateResult();
-    document.getElementById("poen").innerText = "Poeng: "  + poeng1
-}
-
-function chooseAnswer2(){
-    const operator = document.getElementById("yAnswer2").value;
-
-    if(operator === "d"){
-        poeng2 = 1;
-    }
-    else {
-        poeng2 = 0
-    }
-    updateResult();
-    document.getElementById("poen2").innerText = "Poeng: " + poeng2
-}
-
-function chooseAnswer3(){
-    const operator = document.getElementById("yAnswer3").value;
-
-    if(operator === "b"){
-        poeng3 = 1;
-    }
-    else {
-        poeng3 = 0
-    }
-    updateResult();
-    document.getElementById("poen3").innerText = "Poeng: " + poeng3
-}
-
-function chooseAnswer4(){
-    const operator = document.getElementById("yAnswer4").value;
-
-    if(operator === "c"){
-        poeng4 = 1;
-    }
-    else {
-        poeng4 = 0
-    }
-    updateResult();
-    document.getElementById("poen4").innerText = "Poeng: " + poeng4
+    document.getElementById("poen"+(nr+1)).innerText = "Poeng: 1" 
 }
 
 
-document.getElementById("svar1").addEventListener("click", chooseAnswer1);
-document.getElementById("svar2").addEventListener("click", chooseAnswer2);
-document.getElementById("svar3").addEventListener("click", chooseAnswer3);
-document.getElementById("svar4").addEventListener("click", chooseAnswer4);
+
+document.getElementById("svar1").addEventListener('click', function() {
+    chooseAnswer(0);
+    var button = document.getElementById("svar1");
+    button.disabled = true;
+});
+
+document.getElementById("svar2").addEventListener('click', function() {
+    chooseAnswer(1);
+    var button = document.getElementById("svar2");
+    button.disabled = true;
+});
+
+document.getElementById("svar3").addEventListener('click', function() {
+    chooseAnswer(2);
+    var button = document.getElementById("svar3");
+    button.disabled = true;
+});
+
+document.getElementById("svar4").addEventListener('click', function() {
+    chooseAnswer(3);
+    var button = document.getElementById("svar4");
+    button.disabled = true;
+});
+
