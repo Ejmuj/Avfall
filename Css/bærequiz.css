@@ -3,3 +3,39 @@
     grid-row: 1;
     text-align: center;
 }
+
+.item2 {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    text-align: left;
+}
+
+.item3 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    text-align: left;
+}
+
+.item4 {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    text-align: left;
+}
+
+.item5 {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+    text-align: left;
+}
+
+.item6 {
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    text-align: left;
+}
+
+.item7 {
+    grid-column: 1 / span 3;
+    grid-row: 7;
+    text-align: left;
+}
