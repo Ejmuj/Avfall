@@ -3,7 +3,7 @@ let poeng = 0
 
 let totalPoeng = 4
 
-let Anwers = ["a", "d", "c", "b"]
+let Anwers = ["a", "d", "c", "b", "e"]
 
 function updateResult() {
     const totalScore = poeng;
