@@ -50,4 +50,3 @@ document.getElementById("svar4").addEventListener('click', function() {
     var button = document.getElementById("svar4");
     button.disabled = true;
 });
-

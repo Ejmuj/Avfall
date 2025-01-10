@@ -10,78 +10,71 @@
         <div class="grid-container">
             <div class="grid-item item1">
                 <div style="float: left;"><button class="menu-button" onclick="toggleMenu()">|||</button></div>
-                <a2>Bærekrafts quiz</a2></div>
+                <h2>Bærekrafts quiz</h2></div>
 
-        </div>
-        <div class="menu-container">
+            </div>
+            <div class="menu-container">
             
-            <ul class="menu-items" id="menu">
-                <li><a href="../index.html">Hjem</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdHEvFs-ekt8UkNmRY4i_I5x61BLVshuGw86m1_sjJtutw3Lg/viewform?usp=header">Spørreundersøkelse</a></li>
-                <li><a href="../Html/Bærequiz.html">Bærekraft quiz</a></li>
-                <li><a href="../Html/Fasit-til-bærequiz.html">Fasit til Bærekrafts quiz</a></li>
-                <li><a href="../Html/Om-nettsiden.html">Om-nettsiden</a></li>
-            </ul>
-        </div>
-        <script>
-            function toggleMenu() {
-                const menu = document.getElementById('menu');
-                if (menu.style.display === 'block') {
-                    menu.style.display = 'none';
-                } else {
-                    menu.style.display = 'block';
-                }
-            }
-        </script>
-        <div class="grid-item item2"><p>Spørsmål 1: Hva er bærekraft?</p>
-            <select id="yAnswer1">
-                <option value="e">Velg et av svarene under</option>
-                <option value="a">A:  En levemåte som dekker alle levebehoevne uten å ødellegge for fremtidige generasjoner</option>
-                <option value="b">B:  En skjelden men også veldig farlig hjertesykdom </option>
-                <option value="c">C:  En levemåte hvor man gjør hva man vil uten behov for andre eller miljøet</option>
-                <option value="d">D:  Bærekraft er naturen og alt som befinner seg i den</option>
-            </select>
-            <button id="svar1">Trykk for å svare</button>
-            <p id="poen1">Poeng : 0</p>
+                <ul class="menu-items" id="menu">
+                    <li><a href="../index.html">Hjem</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdHEvFs-ekt8UkNmRY4i_I5x61BLVshuGw86m1_sjJtutw3Lg/viewform?usp=header">Spørreundersøkelse</a></li>
+                    <li><a href="../Html/Bærequiz.html">Bærekraft quiz</a></li>
+                    <li><a href="../Html/Fasit-til-bærequiz.html">Fasit til Bærekrafts quiz</a></li>
+                    <li><a href="../Html/Om-nettsiden.html">Om-nettsiden</a></li>
+                </ul>
+            </div>
+            <div class="grid-item item2"><p>Spørsmål 1: Hva er bærekraft?</p>
+                <select id="yAnswer1">
+                    <option value="e">Velg et av svarene under</option>
+                    <option value="a">A:  En levemåte som dekker alle levebehoevne uten å ødellegge for fremtidige generasjoner</option>
+                    <option value="b">B:  En skjelden men også veldig farlig hjertesykdom </option>
+                    <option value="c">C:  En levemåte hvor man gjør hva man vil uten behov for andre eller miljøet</option>
+                    <option value="d">D:  Bærekraft er naturen og alt som befinner seg i den</option>
+                </select>
+                <button id="svar1">Trykk for å svare</button>
+                <p id="poen1">Poeng : 0</p>
+
+            </div>
+            <div class="grid-item item3"><p>Spørsmål 2: Bla Bla Bla</p>
+                <select id="yAnswer2">
+                    <option value="e">Velg et av svarene under</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                </select>
+                <button id="svar2">Trykk for å svare</button>
+                <p id="poen2">Poeng : 0</p>
+
+            </div>
+            <div class="grid-item item4"><p>Spørsmål 3: Bla Bla Bla</p>
+                <select id="yAnswer3">
+                    <option value="e">Velg et av svarene under</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                </select>
+                <button id="svar3">Trykk for å svare</button>
+                <p id="poen3">Poeng : 0</p>
+
+            </div>
+            <div class="grid-item item5"><p>Spørsmål 4: Bla Bla Bla</p>
+                <select id="yAnswer4">
+                    <option value="e">Velg et av svarene under</option>
+                    <option value="a">a</option>
+                    <option value="b">b</option>
+                    <option value="c">c</option>
+                    <option value="d">d</option>
+                </select>
+                <button id="svar4">Trykk for å svare</button>
+                <p id="poen4">Poeng : 0</p>
+
+            </div>
+            <div class="grid-item item6"><p id="resultat">Total poeng: 0 av 4</p></div>
+            <script src="../Javascript/Meny.js"></script>
+            <script src="../Javascript/bærequiz.js"></script>
 
         </div>
-        <div class="grid-item item3"><p>Spørsmål 2: Bla Bla Bla</p>
-            <select id="yAnswer2">
-                <option value="e">Velg et av svarene under</option>
-                <option value="a">a</option>
-                <option value="b">b</option>
-                <option value="c">c</option>
-                <option value="d">d</option>
-            </select>
-            <button id="svar2">Trykk for å svare</button>
-            <p id="poen2">Poeng : 0</p>
-
-        </div>
-        <div class="grid-item item4"><p>Spørsmål 3: Bla Bla Bla</p>
-            <select id="yAnswer3">
-                <option value="e">Velg et av svarene under</option>
-                <option value="a">a</option>
-                <option value="b">b</option>
-                <option value="c">c</option>
-                <option value="d">d</option>
-            </select>
-            <button id="svar3">Trykk for å svare</button>
-            <p id="poen3">Poeng : 0</p>
-
-        </div>
-        <div class="grid-item item5"><p>Spørsmål 4: Bla Bla Bla</p>
-            <select id="yAnswer4">
-                <option value="e">Velg et av svarene under</option>
-                <option value="a">a</option>
-                <option value="b">b</option>
-                <option value="c">c</option>
-                <option value="d">d</option>
-            </select>
-            <button id="svar4">Trykk for å svare</button>
-            <p id="poen4">Poeng : 0</p>
-
-        </div>
-        <div class="grid-item item6"><p id="resultat">Total poeng: 0 av 4</p></div>
-        <script src="../Javascript/bærequiz.js"></script>
     </body>
 </html>
