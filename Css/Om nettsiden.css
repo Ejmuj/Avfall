@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .item1 {
     grid-column: 1 / span 3;
     grid-row: 1;
@@ -9,4 +14,10 @@
     grid-row: 3; /* grid row 3 istedenfor 2 slik at menyen fungerer på en riktig måte*/
     text-align: left;
     background-color: white;
+  }
+
+  .item3 {
+    grid-column: 1 / span 3;
+    grid-row: 4;
+    padding: 0px;
   }
