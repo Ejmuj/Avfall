@@ -34,6 +34,21 @@ h {
     font-weight: bold;
   }
 
+ h2 {
+    font-size: 40px;
+
+  } 
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h3:hover {
+    background-color: #f0fcff;
+    padding: 15px;
+  }
+
+
 p {
     font-size: 25px;
   }
@@ -42,10 +57,7 @@ p2{
   font-size: 14px;
 }
 
-h2 {
-    font-size: 40px;
 
-  }
 
 .myButton {
     border: none;
