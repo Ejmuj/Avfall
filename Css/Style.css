@@ -39,7 +39,7 @@ h {
 
   } 
   
-  h3:hover {
+  button:hover {
     background-color: #f0fcff;
     padding: 15px;
   }

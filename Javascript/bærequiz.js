@@ -17,10 +17,10 @@ function chooseAnswer(nr){
 
     if(operator === Anwers[nr]){
         poeng++;
-        document.getElementById("poen"+(nr+1)).innerText = "Poeng: 1" 
+        document.getElementById("poen"+(nr+1)).innerText = "Poeng: 1 Riktig svar!" 
     }
     else {
-        result = "Poeng: 0"
+        document.getElementById("poen2").innerText = "Poeng: 0 Feil svar!"
     }
     updateResult();
 }
