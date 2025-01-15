@@ -38,6 +38,10 @@ h {
     font-size: 40px;
 
   } 
+
+  h3{
+    font-size: 30px;
+  }
   
   button:hover {
     background-color: #f0fcff;
