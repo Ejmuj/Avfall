@@ -45,6 +45,7 @@ document.getElementById("svar3").addEventListener('click', function() {
     button.disabled = true;
 });
 
+
 document.getElementById("svar4").addEventListener('click', function() {
     chooseAnswer(3);
     var button = document.getElementById("svar4");
