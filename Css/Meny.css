@@ -14,8 +14,6 @@
 .menu-items {
     display: none; 
     position: absolute;
-    top: 100%; 
-    left: 0;
     background-color: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
@@ -23,6 +21,8 @@
     padding: 0;
     margin: 0;
     width: 260px;
+    top: 0;
+    left: 0;
 }
 
 .menu-items li {
@@ -32,8 +32,35 @@
 
 .menu-items li:hover {
     background-color: rgb(4, 0, 128);
+    cursor: pointer;
 }
 
 .menu-items li:last-child {
     border-bottom: none;
+}
+
+.menu-items li {
+    position: relative;        /* Set position for child elements */
+    padding: 0;
+    margin: 0;
+    list-style: none;         /* Remove bullets */
+}
+
+/* Make the anchor fill the entire li */
+.menu-items li a {
+    display: block;           /* Make anchor fill the parent */
+    width: 100%;              /* Fill the full width of li */
+    height: 100%;             /* Fill the full height of li */
+    padding: 10px 15px;       /* Add spacing inside the link */
+    text-decoration: none;    /* Remove underline from links */
+    color: black;
+    box-sizing: border-box;
+}
+
+/* Hover effect for entire li through the anchor */
+.menu-items li a:hover {
+    background-color: rgb(4, 0, 128); 
+    color: white;                     
+    cursor: pointer;
+    font-size: 40px;                  
 }

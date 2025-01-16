@@ -6,3 +6,15 @@ function toggleMenu() {
         menu.style.display = 'block';
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cells = document.querySelectorAll('.clickable-cell');
+    cells.forEach(cell => {
+        cell.addEventListener('click', () => {
+            const url = cell.getAttribute('data-url');
+            if (url) {
+                window.location.href = url; // Navigate to the URL
+            }
+        });
+    });
+});
